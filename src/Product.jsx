@@ -5,13 +5,14 @@ const Product = ({ image, title, description, price, oldPrice, badge }) => {
     return (
         <div className="product-card">
             {badge && <span className="badge sale-badge">{badge}</span>}
-            <img src={image} alt={`Product: ${title}`} className="product-image" />
+            <img src={image} alt={`Product: ${title}`} className="product-image"/>
             <h3 className="product-title">{title}</h3>
             <p className="product-description">{description}</p>
             <div className="product-price">
                 <span className="current-price">{price}₾</span>
                 {oldPrice && <span className="old-price">{oldPrice}₾</span>}
             </div>
+
         </div>
     );
 };

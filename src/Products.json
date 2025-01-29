@@ -69,6 +69,48 @@
       "description": "A13 Bionic, 3GB RAM, 64GB Storage",
       "price": 429.00,
       "category": "tablet"
+    },
+    {
+      "image": "https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fzoommer-images%2Fthumbs%2F0164048_xiaomi-redmi-note-11-pro-5g-664gb-graphite-gray_550.jpeg&w=384&q=100",
+      "title": "Xiaomi Redmi Note 11 Pro",
+      "description": "5G, 8GB RAM, 128GB Storage, 108MP Camera",
+      "price": 379.00,
+      "category": "mobile"
+    },
+    {
+      "image": "https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fzoommer-images%2Fthumbs%2F0186120_samsung-galaxy-s23-ultra-5g-s918bds-12256gb-phantom-black_550.jpeg&w=384&q=100",
+      "title": "Samsung Galaxy S23 Ultra",
+      "description": "12GB RAM, 256GB Storage, Snapdragon 8 Gen 2",
+      "price": 1199.00,
+      "category": "mobile"
+    },
+    {
+      "image": "https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fzoommer-images%2Fthumbs%2F0182344_apple-iphone-14-pro-128gb-space-black_550.jpeg&w=384&q=100",
+      "title": "iPhone 14 Pro",
+      "description": "256GB, 6GB RAM, A16 Bionic",
+      "price": 1399.00,
+      "category": "mobile"
+    },
+    {
+      "image": "https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fzoommer-images%2Fthumbs%2F0175829_samsung-sm-x906-galaxy-tab-s8-ultra-128gb-5g-graphite_550.jpeg&w=384&q=100",
+      "title": "Samsung Galaxy Tab S8 Ultra",
+      "description": "14.6 Display, 16GB RAM, 512GB Storage",
+      "price": 1199.00,
+      "category": "tablet"
+    },
+    {
+      "image": "https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fzoommer-images%2Fthumbs%2F0183756_apple-ipad-pro-129-2022-6th-gen-128gb-wi-fi-silver_550.jpeg&w=384&q=100",
+      "title": "Apple iPad Pro 12.9 (2022)",
+      "description": "M2 Chip, 16GB RAM, 1TB Storage",
+      "price": 1599.00,
+      "category": "tablet"
+    },
+    {
+      "image": "https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fzoommer-images%2Fthumbs%2F0159306_xiaomi-pad-5-6256gb-wi-fi-pearl-white_550.jpeg&w=384&q=100",
+      "title": "Xiaomi Pad 5",
+      "description": "11 Display, 6GB RAM, 256GB Storage",
+      "price": 499.00,
+      "category": "tablet"
     }
   ]
 }

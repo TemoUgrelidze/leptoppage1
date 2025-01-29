@@ -10,26 +10,28 @@ const categories = [
 const CategoryFilter = ({ selectedCategories, handleCategoryChange }) => {
     return (
         <div className="category-filter">
-            <h3>Filter by Category</h3>
-            {categories.map(({ value, label }) => (
-                <label key={value} className="category-label">
-                    <input
-                        type="checkbox"
-                        value={value}
-                        checked={selectedCategories.includes(value)}
-                        onChange={handleCategoryChange}
-                        aria-label={`Filter by ${label}`}
-                    />
-                    {label}
-                </label>
-            ))}
+
+                <h3>Filter by Category</h3>
+                {categories.map(({value, label}) => (
+                    <label key={value} className="category-label">
+                        <input
+                            type="checkbox"
+                            value={value}
+                            checked={selectedCategories.includes(value)}
+                            onChange={handleCategoryChange}
+                            aria-label={`Filter by ${label}`}
+                        />
+                        {label}
+
+                    </label>
+                    ))}
         </div>
-    );
-};
+            );
+            };
 
-CategoryFilter.propTypes = {
-    selectedCategories: PropTypes.arrayOf(PropTypes.string).isRequired,
-    handleCategoryChange: PropTypes.func.isRequired,
-};
+            CategoryFilter.propTypes = {
+            selectedCategories: PropTypes.arrayOf(PropTypes.string).isRequired,
+            handleCategoryChange: PropTypes.func.isRequired,
+        };
 
-export default CategoryFilter;
+            export default CategoryFilter;
