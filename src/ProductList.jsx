@@ -1,4 +1,3 @@
-import "react";
 import Product from "./Product";
 import PropTypes from "prop-types";
 
@@ -12,8 +11,8 @@ const ProductList = ({
                      }) => {
     return (
         <div className="product-list-container">
-            {/* Search Input */}
-            <div className="controls">
+            {/*  Search & Sort */}
+            <div className="controls-wrapper">
                 <input
                     type="text"
                     value={searchQuery}
@@ -21,10 +20,7 @@ const ProductList = ({
                     className="search-input"
                     placeholder="Search products..."
                 />
-            </div>
 
-            {/* Sort Options */}
-            <div className="controls">
                 <select
                     value={sortOption}
                     onChange={handleSortChange}
@@ -38,11 +34,11 @@ const ProductList = ({
                 </select>
             </div>
 
-            {/* Product List */}
+            {/*  List */}
             <div className="product-list">
                 {filteredProducts.length > 0 ? (
-                    filteredProducts.map((product, index) => (
-                        <div key={index} className="product-item">
+                    filteredProducts.map((product) => (
+                        <div key={product.id} className="product-item">
                             <Product {...product} />
                             <button
                                 onClick={() => addToCart(product)}
@@ -65,8 +61,12 @@ ProductList.propTypes = {
     filteredProducts: PropTypes.arrayOf(
         PropTypes.shape({
             id: PropTypes.number.isRequired,
-            name: PropTypes.string.isRequired,
+            title: PropTypes.string.isRequired,  // ✅ შეცვლილი `name` → `title`
+            image: PropTypes.string.isRequired,
+            description: PropTypes.string.isRequired,
             price: PropTypes.number.isRequired,
+            oldPrice: PropTypes.number,
+            badge: PropTypes.string,
         })
     ).isRequired,
     addToCart: PropTypes.func.isRequired,
